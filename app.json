@@ -1,14 +1,14 @@
 {
-    "name": "MDisk Video Uploader Bot",
-    "description": "Upload Mdisk Link Or Direct Url to Pdisk...",
+    "name": "Shazam Music Telegram Bot",
+    "description": "Find Music Using Shazam Api Finder...",
     "keywords": [
         "telegram",
-        "mdisk",
-        "shortner"
+        "shazam",
+        "music"
     ],
-    "website": "https://github.com/PredatorHackerzZ/PdiskVideoBot/",
-    "repository": "https://github.com/PredatorHackerzZ/PdiskVideoBot/",
-    "logo": "https://telegra.ph/file/51a84cdd8254ee0406683.jpg", 
+    "website": "https://paypal.me/AbhishekKumar1N47",
+    "repository": "https://github.com/PayForBotZ/Shazam-Telegram-Bot",
+    "logo": "https://telegra.ph/file/dd2ad960662cc63e85977.jpg", 
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token (must add)",
