@@ -2,6 +2,7 @@ from os import path
 from configparser import ConfigParser
 from pyrogram import Client
 from shazamio import Shazam, exceptions, FactoryArtist, FactoryTrack
+from config import Config
 
 shazam = Shazam()
 
@@ -13,8 +14,9 @@ class bot(Client):
         config.read(config_file)
         name = name.lower()
         plugins = {'root': path.join(__package__, 'plugins')}
-        api_id = config.get('pyrogram', 'api_id')
-        api_hash = config.get('pyrogram', 'api_hash')
+        api_id=Config.API_ID,
+        api_hash=Config.API_HASH,
+        bot_token=Config.BOT_TOKEN
         super().__init__(
             name,
             api_id=api_id,
