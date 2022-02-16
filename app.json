@@ -1,1 +1,39 @@
-app.json
+{
+    "name": "MDisk Video Uploader Bot",
+    "description": "Upload Mdisk Link Or Direct Url to Pdisk...",
+    "keywords": [
+        "telegram",
+        "mdisk",
+        "shortner"
+    ],
+    "website": "https://github.com/PredatorHackerzZ/PdiskVideoBot/",
+    "repository": "https://github.com/PredatorHackerzZ/PdiskVideoBot/",
+    "logo": "https://telegra.ph/file/51a84cdd8254ee0406683.jpg", 
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your bot token (must add)",
+            "value": ""
+        },
+        "API_ID": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": "1234567"
+        },
+        "API_HASH": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": "04fc2de75c898324561286e5b10bd619"
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
+
