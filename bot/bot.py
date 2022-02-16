@@ -13,8 +13,8 @@ class bot(Client):
         config.read(config_file)
         name = name.lower()
         plugins = {'root': path.join(__package__, 'plugins')}
-        api_id = config.get('pyrogram', 'api_id')
-        api_hash = config.get('pyrogram', 'api_hash')
+        api_id = config.get('api_id')
+        api_hash = config.get('api_hash')
         super().__init__(
             name,
             api_id=api_id,
