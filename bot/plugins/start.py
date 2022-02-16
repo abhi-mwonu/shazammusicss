@@ -7,5 +7,5 @@ from pyrogram import filters
 )
 async def alive(_, message):
     await message.reply(
-        f"Hi {message.from_user.mention}, This is an unofficial Shazam Telegram Bot.\n\nℹ️ You can send me an audio, video or a voice note so that I can parse to Shazam and send you the results."
+        f"Hello! {message.from_user.mention} 😑, This is a Music Finder Telegram Bot.\n\nYou can send me an audio, video or a voice note so that I can parse to Shazam and send you the results."
     )
