@@ -14,7 +14,7 @@ class bot(Client):
         config.read(config_file)
         name = name.lower()
         plugins = {'root': path.join(__package__, 'plugins')}
-        api_id=Config.API_ID,
+        api_id=int(Config.API_ID),
         api_hash=Config.API_HASH,
         bot_token=Config.BOT_TOKEN
         super().__init__(
