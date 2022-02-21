@@ -13,7 +13,7 @@ logging.basicConfig(
 )
 LOGS = logging.getLogger(__name__)
 
-name = 'bot'
+name = 'sample.bot'
 
 # Read from config file
 config_file = f"{name}.ini"
