@@ -14,11 +14,16 @@ class bot(Client):
         config.read(config_file)
         name = name.lower()
         plugins = {'root': path.join(__package__, 'plugins')}
-        api_id=int(Config.API_ID),
-        api_hash=Config.API_HASH,
-        bot_token=Config.BOT_TOKEN
-        plugins=plugins,
-        workdir="./",
+        api_id = config.get('pyrogram', 'api_id')
+        api_hash = config.get('pyrogram', 'api_hash')
+        super().__init__(
+            name,
+            api_id=api_id,
+            api_hash=api_hash,
+            config_file=config_file,
+            workers=16,
+            plugins=plugins,
+            workdir="./",
         )
 
     async def start(self):
