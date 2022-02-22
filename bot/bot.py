@@ -17,7 +17,7 @@ class bot(Client):
         api_id=int(Config.API_ID),
         api_hash=Config.API_HASH,
         bot_token=Config.BOT_TOKEN
-        super().__init__(
+        super.__init__(
             name,
             api_id=api_id,
             api_hash=api_hash,
