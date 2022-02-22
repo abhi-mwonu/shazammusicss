@@ -17,8 +17,8 @@ class bot(Client):
         api_id=int(Config.API_ID),
         api_hash=Config.API_HASH,
         bot_token=Config.BOT_TOKEN
-            plugins=plugins,
-            workdir="./",
+        plugins=plugins,
+        workdir="./",
         )
 
     async def start(self):
