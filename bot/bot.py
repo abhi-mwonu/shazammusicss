@@ -2,7 +2,6 @@ from os import path
 from configparser import ConfigParser
 from pyrogram import Client
 from shazamio import Shazam, exceptions, FactoryArtist, FactoryTrack
-from config import Config
 
 shazam = Shazam()
 
