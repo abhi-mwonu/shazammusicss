@@ -1,5 +1,0 @@
-pyrogram
-tgcrypto
-ShazamAPI
-ffmpeg
-requests
