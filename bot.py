@@ -36,7 +36,7 @@ bot = Client(
 
 @bot.on_message(filters.private & filters.command("start"))
 async def start(_, message):
-    await message.reply_text("**Heya! I am Shazam Bot ✨\n\nJust send me any music file to Shazam it 🙃**")
+    await message.reply_text("**Heya! I am Shazam Bot ✨\n\nJust send me any music file to find original Music.**")
 
 
 @bot.on_message(filters.private & filters.audio)
@@ -77,7 +77,7 @@ async def shazam(_, message):
 
     r = requests.post("https://pastebin.com/api/api_post.php", data=data)
 
-    txt = "**Shazam Done ✨\n\nVisit @InfinityJE**"
+    txt = "**Shazam Done ✨\n\nBy ~ @TheTeleRoid**"
     await m.edit(txt, reply_markup=InlineKeyboardMarkup(
                                 [[InlineKeyboardButton(
                                      "Results 📃", url=f"{r.text}")]]))
