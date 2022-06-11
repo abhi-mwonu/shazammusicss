@@ -34,10 +34,29 @@ bot = Client(
     bot_token=BOT_TOKEN
 )
 
+
+START_TEXT = """Hello {}
+I am Shazam Music Search bot. \
+Send me audio file for search result.
+> `I can search in inline too. [Coming Soon]`
+Made by @TheTeleRoid"""
+
+JOIN_BUTTON = [
+    InlineKeyboardButton(
+        text='⭕ Updates Channel ⭕',
+        url='https://telegram.me/TeleRoidGroup'
+    )
+]
+
+
 @bot.on_message(filters.private & filters.command("start"))
 async def start(_, message):
-    await message.reply_text("**Heya! I am Shazam Bot ✨\n\nJust send me any music file to find original Music.**")
-
+    await message.reply_text(
+        text=START_TEXT.format(update.from_user.mention),
+        reply_markup=InlineKeyboardMarkup([JOIN_BUTTON]),
+        disable_web_page_preview=True,
+        quote=True
+    )
 
 @bot.on_message(filters.private & filters.audio)
 async def shazam(_, message):
