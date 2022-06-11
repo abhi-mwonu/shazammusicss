@@ -52,7 +52,7 @@ JOIN_BUTTON = [
 @bot.on_message(filters.private & filters.command("start"))
 async def start(_, message):
     await message.reply_text(
-        text=START_TEXT.format(update.from_user.mention),
+        text=START_TEXT.format(message.from_user.mention),
         reply_markup=InlineKeyboardMarkup([JOIN_BUTTON]),
         disable_web_page_preview=True,
         quote=True
