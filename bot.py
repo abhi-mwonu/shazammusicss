@@ -39,12 +39,12 @@ START_TEXT = """Hello {}
 I am Shazam Music Search bot. \
 Send me audio file for search result.
 > `I can search in inline too. [Coming Soon]`
-Made by @TheTeleRoid"""
+Made by Abhi🥰"""
 
 JOIN_BUTTON = [
     InlineKeyboardButton(
-        text='⭕ Updates Channel ⭕',
-        url='https://telegram.me/TeleRoidGroup'
+        text='🥰 Updates Channel 🥰',
+        url='https://t.me/+STIOAmfTO8Q2MmM1'
     )
 ]
 
@@ -96,7 +96,7 @@ async def shazam(_, message):
 
     r = requests.post("https://pastebin.com/api/api_post.php", data=data)
 
-    txt = "**Shazam Done ✨\n\nBy ~ @TheTeleRoid**"
+    txt = "**Shazam Done ✨\n\nBy ~ @musicilla**"
     await m.edit(txt, reply_markup=InlineKeyboardMarkup(
                                 [[InlineKeyboardButton(
                                      "Results 📃", url=f"{r.text}")]]))
